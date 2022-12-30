@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Wellington">
+    <meta name="description" content="Aonde compartilho minhas ideias, pensamentos e minhas principais competências">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css -->
+    <link rel="preload" href="styles/main-style.css" as="style">
+    <link rel="stylesheet" href="styles/main-style.css">
+    <link rel="stylesheet" href="styles/mediaQuery">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header id="main-header">
+        <nav id="main-nav">
+            <figure id="logo-container">
+                <img src="images/logo.png" alt="" id="logo-content">
+            </figure>
+            <ul id="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="#projects-title">Projetos</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#">Certificações</a>
+                </li>
+                <button id="menu-switch-theme" title="Trocar tema" onclick="changeTheme()">
+                    <span class="material-icons">dark_mode</span>
+                </button>
+            </ul>
+        </nav>
+        <div id="main-desc">
+            <p id="author-name">Wellington Lucas</p>
+            <h1 id="main-title-css">Css</h1>
+            <div id="main-photo"></div>
+            <h1 id="main-title-html">Html</h1>
+        </div>
+    </header>
+
+    <aside id="main-skills">
+        <div class="content-card">
+            <figure class="card-figure">
+                <img src="images/habilidade-1.png" alt="" class="figure-content">
+            </figure>
+            <h2 class="card-title">Em direção ao aprendizado</h2>
+            <p class="card-description">
+                Sigo diariamente aprendendo mais sobre as tecnologias da área web,
+                seguindo meu próprio fluxo de aprendizado e construindoh projetos em qual deposito todo meu
+                conhecimento.
+            </p>
+        </div>
+        <div class="content-card">
+            <figure class="card-figure">
+                <img src="images/habilidade-2.png" alt="" class="figure-content">
+            </figure>
+            <div class="wrap">
+                <h2 class="card-title">Ideias novas a cada dia</h2>
+                <p class="card-description">
+                    Muitas das ideias que tenho são diariamente colocadas em práticas, tanto sites testes quanto
+                    projetos construídos para propósito de uso profssional.
+                </p>
+            </div>
+
+        </div>
+        <div class="content-card">
+            <figure class="card-figure">
+                <img src="images/habilidade-3.png" alt="" class="figure-content">
+            </figure>
+            <h2 class="card-title">Desenvolvedor Web Iniciante</h2>
+            <p class="card-description">
+                Apesar de atuar na área há mais de 1 ano e meio, me considero iniciante, pois ainda não domino
+                totalmente as tecnologias utilizadas na síntese de um site.
+            </p>
+
+        </div>
+    </aside>
+
+    <main id="main-content">
+        <section id="presentation-container">
+            <article id="presentation-content">
+                <main id="presentation-main">
+                    <div id="presentation-photo"></div>
+                    <div id="presentation-desc">
+                        <h1>Sempre buscando <br> <span id="text-colorful">conhecimento</span></h1>
+                        <p>Busco conhecer afundo sobre as tecnologias que utilizo...</p>
+                        <a href="#projects-title">Ver projetos <span class="material-icons">arrow_downward</span></a>
+                    </div>
+                </main>
+                <footer id="presentation-footer">
+                    <div class="technologies-card">
+                        <img src="images/html-icon.png" alt="">
+                        <h2>HTML5</h2>
+                    </div>
+                    <div class="technologies-card">
+                        <img src="images/css-icon.png" alt="">
+                        <h2>CSS3</h2>
+                    </div>
+                    <div class="technologies-card">
+                        <img src="images/js-icon.png" alt="">
+                        <h2>JavaScript</h2>
+                    </div>
+                    <div class="technologies-card">
+                        <img src="images/figma-icon.png" alt="">
+                        <h2>Figma</h2>
+                    </div>
+                    <div id="technologies-card-show">
+                        <span class="material-icons">west</span>
+                        <p>Tecnologias que utilizo</p>
+                    </div>
+                </footer>
+            </article>
+        </section>
+
+        <section id="finished-projects">
+            <h1 id="projects-title">Projetos realizados</h1>
+            <p id="projects-description">É onde eu coloco meu conhecimento em prática</p>
+
+            <article class="projects-card">
+                <div class="img-side">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+                <div class="project-description">
+                    <h2>FrontQuestions</h2>
+                    <p>Um site feito para ajudar iniciantes e pessoas que pensam em atuar na área</p>
+                    <a href="#" class="link-button">Leia mais</a>
+                </div>
+            </article>
+            <article class="projects-card">
+                <div class="img-side">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+
+                <div class="project-description">
+                    <h2>Social Share</h2>
+                    <p>Site produzido com o propósito de compartilhar minhas redes sociais</p>
+                    <a href="#" class="link-button">Leia mais</a>
+                </div>
+            </article>
+            <article class="projects-card">
+                <div class="img-side">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+                <div class="project-description">
+                    <a href="#" class="link-button">Leia mais</a>
+                </div>
+            </article>
+        </section>
+        <article>
+            <aside>
+
+            </aside>
+        </article>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
