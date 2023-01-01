@@ -415,6 +415,7 @@ body {
 
 #projects-content {
     display: flex;
+    gap: 2.6rem;
     flex-flow: wrap column;
     margin-top: 9rem;
 }
@@ -446,7 +447,6 @@ body {
 
 .projects-card img {
     filter: drop-shadow(0px 0px 23px #B7A6FA);
-    width: 100%;
 }
 
 .projects-card .img-front{
@@ -478,10 +478,6 @@ body {
     margin-bottom: 5.9rem;
 }
 
-.project-description > * {
-    /* margin-bottom: 20px; */
-}
-
 .project-description h2 {
     font-weight: 400;
     font-size: 3.6rem;
@@ -504,4 +500,27 @@ body {
     width: max-content;
     padding: 10px;
     border-radius: 11px;
+}
+
+#redes-sociais-img {
+    position: relative;
+}
+#redes-sociais-img img { 
+    width: 27.5rem;
+}
+
+
+#redes-sociais-img img:first-child {
+    height: 44.2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#redes-sociais-img img:nth-child(2) {
+    height: 49.5rem;
+    width: 28rem;
+    position: absolute;
+    right: 0;
+    bottom: -50px;
 }
