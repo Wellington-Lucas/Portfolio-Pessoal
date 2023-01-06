@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap&family=Roboto:wght@300;400;600;700&display=swap');
 
 /* External font */
 @font-face {
@@ -14,6 +14,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    font: inherit;
 }
 
 :root {
@@ -24,61 +25,51 @@
 
     --main-color: #2B4029;
 
-    --presentation-card-bg: ;
-    --presentation-bg1: #40B73480;
-    --presentation-bg2: #0047FF0D;
-
-    --finished-projects-bg: #402A41;
-    --finished-projects-card-bg: #A595B1;
-    --finished-projects-button-bg: #EBEBF2;
 }
 
 
 html {
     font-size: 62.5%;
     font-family: var(--main-font);
+    scroll-behavior: smooth;
+    /* color-scheme: dark light; */
 }
 
 body {
-    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    min-height: 100vh;
 }
 
+img, picture {
+    max-width: 100%;
+    display: block;
+}
 
 #main-header {
-    width: 100%;
-    height: 100vh;
-    position: relative;
+    max-width: 100%;
+    height: calc(100% + 11.3rem);
     background-image: linear-gradient(120deg, #2B4029 55vw, white 50vw);
 }
 
 #main-nav {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
-    min-height: 9rem;
-    padding: 1.2rem 1.3rem;
+    min-height: 7.5rem;
+    padding: 1.2rem 5rem;
 }
 
-#logo-container {
-    display: flex;
-    align-items: center;
-    height: 9rem;
-
-    max-width: 0100pc;
-}
-
-#logo-content {
-    height: calc(100% - 2rem);
+#logo-img {
+    max-height: 7.5rem;
     border-radius: 30%;
+    background-color: white;
 }
 
 #nav-menu {
     display: flex;
     align-items: center;
     column-gap: 5rem;
-    margin-right: 4rem;
-    z-index: 2;
 }
 
 #nav-menu li a {
@@ -93,11 +84,11 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    content: " ";
+    content: "";
     height: 1px;
     background: transparent;
     width: 0;
-    transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 600ms ease;
 }
 
 #nav-menu li a:hover::after {
@@ -115,8 +106,7 @@ body {
 }
 
 #main-desc {
-    height: calc(100vh - 15rem);
-    width: 100%;
+    height: calc(100% - 15rem);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -128,10 +118,8 @@ body {
     content: "";
     position: absolute;
     width: 876px;
-    height: 876px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    height: 100%;
+    align-self: center;
     background: rgb(255, 255, 255, 0.2);
     mix-blend-mode: normal;
     filter: blur(222.5px);
@@ -139,8 +127,8 @@ body {
 }
 
 #main-photo {
-    width: 348px;
-    height: 348px;
+    width: min(348px, 50vw);
+    min-height: 348px;
     border-radius: 50%;
     background: grey url(../images/foto-perfil.jpg) center center no-repeat;
     background-size: cover;
@@ -149,22 +137,30 @@ body {
     position: relative;
 }
 
-#main-desc #author-name {
-    font: normal 400 6.4rem var(--header-name-font);
-    color: #CDD2DB;
-    position: absolute;
-    top: 12rem;
-    left: 25rem;
-}
 
 #main-desc h1 {
-    font: normal 600 clamp(8rem, 12.8rem, 10vw) var(--header-title-font);
+    font: normal 600 clamp(4rem, 12.8rem, 10vw) var(--header-title-font);
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 }
 
 #main-title-css {
     color: #E8E8E8;
     margin-right: -.5rem;
     mix-blend-mode: overlay;
+    position: relative;
+}
+
+#main-desc #author-name {
+    content: "Wellington Lucas";
+    text-align: center;
+    width: 30rem;
+    max-width: 40rem;
+    font: normal 400 6.4rem var(--header-name-font);
+    top: 10rem;
+    left: 35rem;
+    position: absolute;
+    color: #CDD2DB;
 }
 
 #main-title-html {
@@ -180,24 +176,17 @@ body {
     justify-content: space-between;
     padding: 8rem 6.4rem;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 #main-skills .content-card {
     background-color: #F5F8FF;
-    flex: 1 0 35rem;
     display: flex;
+    flex: 1 1 28.6rem;
     flex-direction: column;
     padding: 2.4rem;
     min-height: 200px;
 }
-
-#main-skills .wrap {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 
 #main-skills .card-figure, #main-skills .card-title {
     margin-bottom: 2.4rem;
@@ -206,14 +195,10 @@ body {
 #main-skills .card-figure {
     padding: 1rem;
     max-width: 6rem;
-    height: 6rem;
+    max-height: 6rem;
     background: #FFFFFF;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-}
-
-#main-skills .figure-content {
-    width: 100%;
 }
 
 #main-skills .card-description {
@@ -275,7 +260,9 @@ body {
     top: -10%;
     left: 35%;
     width: 87.36px;
+    max-width: 87.36px;
     height: 87.36px;
+    min-height: 87.36px;
 }
 
 #presentation-main::after {
@@ -343,6 +330,7 @@ body {
 #presentation-footer {
     margin-top: 10rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 5rem;
     z-index: 1;
@@ -394,9 +382,9 @@ body {
 }
 
 #finished-projects {
-    background-color: var(--finished-projects-bg);
+    background-color: #402A41;
     color: #FFFFFF;
-    padding: 10rem 10.65rem;
+    padding: 9.4rem 16.5rem;
     text-align: center;
 }
 
@@ -405,6 +393,7 @@ body {
     font-size: 4.8rem;
     line-height: 6.72rem;
     margin-bottom: 1rem;
+    scroll-margin-top: 9.4rem;
 }
 
 #projects-description {
@@ -434,7 +423,7 @@ body {
     padding: 0 1.4rem 0 6.6rem;
 }
 
-.projects-card > .img-side, .projects-card > .project-description {
+.projects-card > *{
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis:0;
@@ -446,7 +435,8 @@ body {
 }
 
 .projects-card img {
-    filter: drop-shadow(0px 0px 23px #B7A6FA);
+    filter: drop-shadow(0px 0px 23px #B7A6FA);    
+    border-radius: 4.1rem;
 }
 
 .projects-card .img-front{
@@ -494,7 +484,7 @@ body {
 .project-description .link-button {
     font-weight: 400;
     font-size: 1.6rem;
-    background-color: var(--finished-projects-button-bg);
+    background-color: #EBEBF2;
     line-height: 2.24rem;
     color: #000000;
     width: max-content;
@@ -502,25 +492,35 @@ body {
     border-radius: 11px;
 }
 
-#redes-sociais-img {
+#frontQuestions img {
+    border-radius: 4.1rem 4.1rem 0 0;
+}
+
+#projeto-redes-sociais{
     position: relative;
 }
-#redes-sociais-img img { 
+
+#projeto-redes-sociais img { 
     width: 27.5rem;
+    filter: drop-shadow(0px 0px 23px rgba(183, 166, 250, 0.3));
 }
 
 
-#redes-sociais-img img:first-child {
+#projeto-redes-sociais img:first-child {
     height: 44.2rem;
     position: absolute;
     top: 0;
     left: 0;
 }
 
-#redes-sociais-img img:nth-child(2) {
+#projeto-redes-sociais img:nth-child(2) {
     height: 49.5rem;
     width: 28rem;
     position: absolute;
     right: 0;
     bottom: -50px;
+}
+
+.projects-card #img-bottom {
+    top: 10rem;
 }
