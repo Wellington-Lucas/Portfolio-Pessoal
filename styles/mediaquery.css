@@ -1,0 +1,134 @@
+@media screen and (max-width: 1201px) {
+
+    #presentation-content {
+        margin: 15rem;
+    }
+
+    #presentation-main {
+        gap: 4em;
+    }
+
+    #presentation-main p {
+        font-size: 1.7rem;
+    }
+
+    #finished-projects {
+        padding: 4.5rem 6.5rem;
+    }
+
+    .project-description p {
+        font-size: 1.5rem;
+    }
+
+    .project-description h2 {
+        font-size: 3rem;
+    }
+
+    #about-card {
+        padding: 2rem 6rem;
+    }
+
+    #about-main-me {
+        flex-basis: 10%;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    #presentation-main p {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    #finished-projects {
+        padding: 4.5rem 10rem;
+    }
+
+    .projects-card {
+        flex-direction: column;
+        padding: 2rem 6.6rem;
+        gap: 4rem;
+    }
+
+    .projects-card #img-bottom {
+        top: 0;
+    }
+
+    .projects-card .img-front {
+        bottom: 0;
+    }
+
+    .project-description {
+        text-align: center;
+        align-items: center;
+        margin-bottom: 3em;
+    }
+
+    #frontQuestions img {
+        border-radius: 4rem;
+    }
+
+    #projeto-redes-sociais img:first-child {
+        top: -3rem;
+    }
+
+    #projeto-redes-sociais img:nth-child(2) {
+        top: 0;
+        height: 100%;
+    }
+
+    .projects-card>div {
+        width: 100%;
+    }
+
+    #projeto-redes-sociais>div:first-child {
+        order: 1;
+    }
+
+    #about-card {
+        padding-right: 4rem;
+        min-height: 45rem;
+    }
+
+    #about-main-inner {
+        /* padding: 2.5rem 0rem;  */
+    }
+
+
+}
+
+@media screen and (max-width: 769px) {
+
+    #presentation-photo {
+        min-width: 100px;
+    }
+
+    #finished-projects {
+        padding: 4.5rem 3rem;
+    }
+
+    .projects-card {
+        padding: 1rem 3.5rem;
+    }
+
+    .project-description {
+        margin-bottom: 2em;
+    }
+
+    .project-description h2 {
+        font-size: 2.5rem;
+    }
+
+    #about-main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:481px) {
+
+}
+
+@media screen and (max-width: 320px) {}
