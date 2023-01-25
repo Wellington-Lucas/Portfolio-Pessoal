@@ -1,5 +1,15 @@
 @media screen and (max-width: 1201px) {
 
+    #main-skills .content-card:last-child {
+        padding: 24px 10%;
+        text-align: center;
+    }
+
+    #main-skills .content-card:last-child .card-figure {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     #presentation-content {
         margin: 15rem;
     }
@@ -25,23 +35,108 @@
     }
 
     #about-card {
-        padding: 2rem 6rem;
+        padding: 7.4rem 1rem 1rem 4.9rem;
     }
 
-    #about-main-me {
-        flex-basis: 10%;
+    #about-card ul {
+        padding-right: 4rem;
     }
+
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {    
+
     #presentation-main p {
         font-size: 1.5rem;
     }
 
+    #about-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-main-inner {
+        align-items: center;
+        min-height: max-content;
+        width: 100%;
+    }
+
+    #about-card {
+        height: auto;
+        max-width: 100%;
+        flex-grow: 1;
+        text-align: center;
+        align-items: center;
+        margin: 3rem 4rem;
+        gap: 2rem;
+        padding: 3.9rem 0;
+        justify-content: center;
+    }
+
+    #about-card ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        justify-items: center;
+        align-items: center;
+        grid-template-rows: 100px 100px;
+        padding-right: 0;
+    }
+
+    #about-card li {
+        height: auto;
+        inset: 0;
+    }
+
+    #about-card li:nth-child(2) {
+        justify-self: flex-start;
+    }
+
+    #about-main-me, #about-main-picture {
+        max-width: 100%;
+    }
+
+
 }
 
 @media screen and (max-width: 992px) {
+
+
+    #main-skills .content-card {
+        flex: 1 1 29.6rem;
+    }
+
+
+    #presentation-main {
+        flex-direction: column;
+        border-radius: 10rem 0;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+
+    #presentation-content {
+        margin: 12rem;
+    }
+
+    #presentation-desc {
+        align-self: center;
+        gap: 2em;
+        align-items: center;
+    }
+
+    #presentation-desc h1 {
+        text-align: center;
+    }
+
+    #presentation-desc p {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #photo-container {
+        width: 100%;
+    }
 
     #finished-projects {
         padding: 4.5rem 10rem;
@@ -89,22 +184,43 @@
     }
 
     #about-card {
-        padding-right: 4rem;
         min-height: 45rem;
     }
 
-    #about-main-inner {
-        /* padding: 2.5rem 0rem;  */
-    }
-
-
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
 
-    #presentation-photo {
-        min-width: 100px;
+    #main-skills .content-card:last-child {
+        padding: 2.4rem;
+        text-align: start;
     }
+
+    #main-skills .content-card:last-child .card-figure {
+        margin: 0;
+    }
+
+    #presentation-main #presentation-photo {
+        max-width: 100%;
+        border-radius: 0;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        background-size: cover;
+        border: .5em solid white;
+    }
+
+    #presentation-main {
+        backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(50px);
+    }
+
+    #presentation-content {
+        margin: 2rem;
+    }
+
+    #presentation-desc h1 {
+        font-size: 2.5rem;
+    }
+    
 
     #finished-projects {
         padding: 4.5rem 3rem;
@@ -121,14 +237,19 @@
     .project-description h2 {
         font-size: 2.5rem;
     }
-
-    #about-main {
-        flex-direction: column;
+    #about-main ul {
+        margin: auto 0;
+        display: flex;
+        /* align-items: flex-start; */
     }
 }
 
-@media screen and (max-width:481px) {
+@media screen and (max-width: 600px) {
+   
+
 
 }
+
+@media screen and (max-width:481px) {}
 
 @media screen and (max-width: 320px) {}
