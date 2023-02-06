@@ -11,6 +11,7 @@
     <link rel="preload" href="styles/style.css" as="style">
     <link rel="stylesheet" href="styles/style.css" media="all">
     <link rel="stylesheet" href="styles/mediaquery.css" media="screen">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,9 +37,25 @@
                 </button>
             </ul>
         </nav>
+        <nav id="nav-menu-mobile">
+            <button id="menu-button"><span id="hamburger"></span></button>
+            <ul id="menu-mobile-list">
+                <li class="nav-menu-item">
+                    <a href="#projects-title" class="mobileLink">Projetos</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#about" class="mobileLink">Sobre mim</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#footer" class="mobileLink" id="Link">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+
         <div id="main-desc">
             <h1 id="main-title-css">Css</h1>
-            <div id="main-photo"></div>
+            <img src="images/foto-perfil-desktop.jpg" alt="" id="main-photo">
             <h1 id="main-title-html">Html</h1>
         </div>
     </header>
@@ -94,11 +111,11 @@
                 <footer id="presentation-footer">
                     <div class="technologies-card">
                         <img src="images/html-icon.svg" alt="">
-                        <h2>HTML5</h2>
+                        <h2>Html5</h2>
                     </div>
                     <div class="technologies-card">
                         <img src="images/css-icon.svg" alt="">
-                        <h2>CSS3</h2>
+                        <h2>Css3</h2>
                     </div>
                     <div class="technologies-card">
                         <img src="images/js-icon.svg" alt="">
@@ -165,27 +182,27 @@
                 </header>
 
                 <main id="about-main">
-                    <section id="about-main-inner">
-                        <div id="about-card">
-                            <h2>Eu sou <span>Wellington</span> Lucas da Veiga</h2>
-
-                            <ul>
-                                <li>Nascido em Blumenau</li>
-                                <li>Eu tenho 17 anos</li>
-                                <li>Iniciei na área em 2021</li>
-                                <li>Estudando atualmente no <a href="https://ibirama.ifc.edu.br/" rel="external"
-                                        target="_blank">IFC - Ibirama</a></li>
-                            </ul>
-
-                            <a href="#"> <img src="" alt=""> </a>
-                            <a href="#"> <img src="" alt=""> </a>
-                        </div>
-                    </section>
-                    <picture id="about-main-picture">
-                        <source media="(max-width: 600px)" srcset="images/perfil-bg-remove(600).png">
-                        <img src="images/perfil-bg-remove(851).png" id="about-main-me"
-                            alt="Foto de perfil do criador do site">
-                    </picture>
+                    <div id="about-main-inner">
+                        <section id="about-main-inner-content">
+                            <div id="about-card">
+                                <h2>Eu sou <span>Wellington</span> Lucas da Veiga</h2>
+                                <ul>
+                                    <li>Nascido em Blumenau</li>
+                                    <li>Eu tenho 17 anos</li>
+                                    <li>Iniciei na área em 2021</li>
+                                    <li>Estudando atualmente no <a href="https://ibirama.ifc.edu.br/" rel="external"
+                                            target="_blank">IFC - Ibirama</a></li>
+                                </ul>
+                                <a href=""> <img src="" alt=""> </a>
+                                <a href="#"> <img src="" alt=""> </a>
+                            </div>
+                        </section>
+                        <picture id="about-main-picture">
+                            <source media="(max-width: 600px)" srcset="images/perfil-bg-remove(600).png">
+                            <img src="images/perfil-bg-remove(851).png" id="about-main-me"
+                                alt="Foto de perfil do criador do site">
+                        </picture>
+                    </div>
                 </main>
             </article>
 
